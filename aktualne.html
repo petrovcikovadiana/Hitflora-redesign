@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitflora — Aktuálně</title>
+    <meta name="description"
+        content="Zůstaňte v obraze s našimi aktuálními událostmi, novinkami a speciálními nabídkami v našem zahradnictví." />
+    <link rel="canonical" href="https://hitflora.cz/aktualne" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="aktualne.css" />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="news-hero reveal">
+            <div class="container news-hero-grid">
+                <div class="news-hero-copy reveal">
+                    <div class="eyebrow">Novinky z Hitflory</div>
+                    <h1>Aktuálně u nás</h1>
+                    <p>
+                        Sledujte nové příspěvky, sezónní tipy, zajímavosti i čerstvé novinky
+                        z našeho zahradnictví a sadovnických úprav.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#newsList" class="btn btn-primary">Prohlédnout příspěvky</a>
+                        <a href="#kontakt" class="btn btn-secondary">Kontaktovat nás</a>
+                    </div>
+                </div>
+
+                <div class="news-hero-visual reveal">
+                    <div class="news-hero-image"></div>
+
+                    <div class="floating-card hero-news-card">
+                        <small>Aktuality</small>
+                        <strong>Sezónní tipy, novinky a dění u nás</strong>
+                        <p>
+                            Sledujte, co je u nás právě aktuální.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="newsList">
+            <div class="container news-container">
+
+
+                <div id="newsStatus" class="news-status">Načítám příspěvky…</div>
+
+                <div id="newsListInner" class="news-list" aria-live="polite"></div>
+
+                <div id="pagination" class="pagination" aria-label="Stránkování příspěvků"></div>
+            </div>
+        </section>
+
+        <div id="contact-banner-placeholder"></div>
+
+    </main>
+
+    <footer class="footer reveal">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo-shell">
+                    <img src="https://hitflora.cz/assets/svg/logo-white.svg" alt="Hitflora" class="footer-logo" />
+                </div>
+                <span>Moderní zahradnictví, návrhy a realizace zelených prostor.</span>
+            </div>
+
+            <!-- <div class="footer-nav">
+                <a href="index.html#sluzby">Služby</a>
+                <a href="index.html#inspirace">Inspirace</a>
+                <a href="about.html">O nás</a>
+                <a href="aktualne.html">Aktuálně</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script>
+        loadNavbar("aktualne");
+    </script>
+    <script src="aktualne.js"></script>
+
+
+    <script src="contact-banner.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        loadContactBanner();
+    </script>
+
+
+
+</body>
+
+</html>
