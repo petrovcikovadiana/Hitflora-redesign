@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truhlíky | Hitflora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="sortiment.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="page-hero page-hero--detail reveal">
+            <div class="container">
+                <div class="breadcrumb reveal">
+                    <a href="index.html">Domů</a>
+                    <span>/</span>
+                    <a href="sortiment.html">Sortiment</a>
+                    <span>/</span>
+                    <strong>Truhlíky</strong>
+                </div>
+
+                <div class="plant-hero">
+                    <div class="plant-hero-copy reveal">
+                        <div class="eyebrow eyebrow--soft">Sortiment</div>
+                        <h1>Truhlíky</h1>
+                        <p>
+                            Nabízíme truhlíky pro balkon, terasu i vstupní prostory.
+                            V sortimentu najdete klasické i samozavlažovací varianty v různých velikostech a barvách.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#prehled" class="btn btn-primary">Zobrazit přehled</a>
+                            <a href="#kontakt" class="btn btn-secondary">Ověřit dostupnost</a>
+                        </div>
+
+                        <div class="hero-pills">
+                            <span class="hero-pill">Klasické truhlíky</span>
+                            <span class="hero-pill">Samozavlažovací</span>
+                            <span class="hero-pill">Různé velikosti</span>
+                            <span class="hero-pill">Různé barvy</span>
+                        </div>
+                    </div>
+
+                    <div class="plant-hero-media reveal">
+                        <img src="truhlik.png" alt="Truhlíky" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section reveal" id="prehled">
+            <div class="container">
+                <div class="section-head">
+                    <div>
+                        <h2>Přehled nabídky truhlíků</h2>
+                    </div>
+                </div>
+
+                <div class="plant-page-layout">
+                    <aside class="plant-sidebar reveal">
+                        <div class="sidebar-card">
+                            <a href="#nabidka">Naše nabídka</a>
+                            <a href="#varianty">Dostupné varianty</a>
+                        </div>
+                    </aside>
+
+                    <div class="plant-content">
+                        <section class="plant-section-card reveal" id="nabidka">
+                            <div class="plant-section-grid">
+                                <div class="plant-section-copy">
+                                    <div class="eyebrow eyebrow--soft">Praktické řešení</div>
+                                    <h3>Truhlíky pro každodenní použití</h3>
+                                    <p>
+                                        V nabídce máme truhlíky vhodné pro pěstování květin, bylinek i dalších rostlin.
+                                        Jsou vhodné na balkon, terasu, parapet i k rodinnému domu.
+                                    </p>
+                                    <div class="tag-list">
+                                        <span>Balkon</span>
+                                        <span>Terasa</span>
+                                        <span>Parapet</span>
+                                    </div>
+                                </div>
+                                <div class="plant-section-media">
+                                    <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?auto=format&fit=crop&w=1200&q=80"
+                                        alt="Truhlíky" />
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="plant-list-block reveal" id="varianty">
+                            <div class="plant-list-header">
+                                <div>
+                                    <div class="eyebrow eyebrow--soft">Dostupné varianty</div>
+                                    <h3>Klasické i samozavlažovací truhlíky</h3>
+                                </div>
+                                <p>
+                                    Nabízíme jednoduché i samozavlažovací truhlíky v různých velikostech a barevných
+                                    provedeních.
+                                </p>
+                            </div>
+
+                            <div class="list-chip-grid">
+                                <span>Obyčejné truhlíky</span>
+                                <span>Samozavlažovací truhlíky</span>
+                                <span>Různé velikosti</span>
+                                <span>Různé barvy</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="contact-banner-placeholder"></div>
+    </main>
+
+    <footer class="footer reveal">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo-shell">
+                    <img src="https://hitflora.cz/assets/svg/logo-white.svg" alt="Hitflora" class="footer-logo" />
+                </div>
+                <span>Truhlíky, zahradnické potřeby a poradenství pro každou zahradu.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="navbar.js"></script>
+    <script>
+        loadNavbar("sortiment");
+    </script>
+
+    <script src="contact-banner.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        loadContactBanner();
+    </script>
+    <script src="sortiment.js"></script>
+</body>
+
+</html>

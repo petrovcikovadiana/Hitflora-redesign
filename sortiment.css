@@ -754,7 +754,7 @@ p {
 }
 
 .plant-hero-media {
-    min-height: 520px;
+    min-height: 400px;
     border-radius: 32px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -776,7 +776,7 @@ p {
 
 .plant-sidebar {
     position: sticky;
-    top: 110px;
+    top: 10px;
 }
 
 .sidebar-card {

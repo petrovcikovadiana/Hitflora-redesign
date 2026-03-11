@@ -243,7 +243,7 @@ h1 {
 
 .content-sidebar {
     position: sticky;
-    top: 106px;
+    top: 10px;
     display: grid;
     gap: 18px;
 }
