@@ -18,11 +18,11 @@
 }
 
 .header-inner {
-    min-height: 54px;
+    min-height: 62px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 20px;
 }
 
 .brand {
@@ -31,7 +31,7 @@
 }
 
 .brand-logo {
-    width: 105px;
+    width: 120px;
     height: auto;
     display: block;
 
@@ -40,10 +40,10 @@
 .nav {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 22px;
     color: var(--muted, #5f7468);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
 }
 
 .nav a {
@@ -83,11 +83,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
-    padding: 0 22px;
+    min-height: 42px;
+    padding: 0 18px;
     border-radius: 999px;
     border: 1px solid transparent;
     font-weight: 700;
+    font-size: 0.92rem;
+
     transition:
         transform 250ms ease,
         box-shadow 250ms ease,
@@ -179,6 +181,6 @@
     }
 
     .brand-logo {
-        width: 96px;
+        width: 104px;
     }
 }
