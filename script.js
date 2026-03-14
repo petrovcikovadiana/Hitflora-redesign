@@ -268,3 +268,28 @@ serviceCards.forEach((card) => {
     card.style.setProperty("--my", "50%");
   });
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const siteHeader = document.getElementById("siteHeader");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && siteHeader && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = siteHeader.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      siteHeader.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 1100) {
+      siteHeader.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+}

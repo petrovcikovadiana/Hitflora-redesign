@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    line-height: 1.7;
+}
+
+.gdpr-page h2 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: normal;
+    max-width: none;
+
+}
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+}
+
+.heading-section {
+    max-width: 1440px;
+    margin: 96px auto 0;
+    padding: 0 20px;
+}
+
+.heading-box {
+    text-align: center;
+}
+
+.heading-box h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111827;
+}
+
+.heading-box h1 span {
+    color: #3d7f4f;
+}
+
+.heading-box hr {
+    width: 80px;
+    height: 1px;
+    margin: 16px auto 0;
+    border: none;
+    background-color: #d1d5db;
+}
+
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.content-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.content-section p {
+    margin-bottom: 12px;
+}
+
+.content-section ul {
+    margin: 12px 0 12px 24px;
+}
+
+.content-section li {
+    margin-bottom: 6px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #6b7280;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .heading-section {
+        padding: 0 56px;
+    }
+
+    .heading-box h1 {
+        font-size: 36px;
+    }
+
+    .heading-box hr {
+        width: 176px;
+    }
+
+    .content-section {
+        padding: 40px 64px 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading-section {
+        padding: 0 120px;
+    }
+
+    .content-section {
+        padding: 40px 96px 60px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .heading-section {
+        padding: 0 180px;
+    }
+
+    .content-section {
+        padding: 40px 160px 60px;
+    }
+}

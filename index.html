@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cookies.css">
+
 </head>
 
 <body>
@@ -28,8 +30,8 @@
 
                     <p>
                         Nabízíme sadovnické úpravy, prodej okrasných dřevin, rostlin a doplňkového
-                        zahradního sortimentu. Ať plánuješ novou zahradu, hledáte konkrétní rostliny
-                        nebo jen vybíráš to pravé pro sezónu, u nás najdete inspiraci i odborné poradenství.
+                        zahradního sortimentu. Ať plánujete novou zahradu, hledáte konkrétní rostliny
+                        nebo jen vybíráte to pravé pro sezónu, u nás najdete inspiraci i odborné poradenství.
                     </p>
 
 
@@ -60,7 +62,7 @@
 
 
                     <div class="floating-card top-hours-card parallax-card" data-speed="16">
-                        <small>Otvírací doba</small>
+                        <small>Otevírací hodiny</small>
                         <strong>Kdy se u nás stavit</strong>
 
                         <div id="hero-opening-hours-list" class="hours-list">
@@ -248,6 +250,8 @@
                     <img src="https://hitflora.cz/assets/svg/logo-white.svg" alt="Hitflora" class="footer-logo" />
                 </div>
                 <span>Sadovnické úpravy, prodej rostlin a sortiment pro krásnou zahradu.</span>
+                <a href="gdpr.html">GDPR</a>
+                <button class="edit edit-cookies">Upravit nastavení cookies</button>
             </div>
 
             <!-- <div class="footer-nav">
@@ -258,7 +262,72 @@
             </div> -->
         </div>
     </footer>
+    <!-- cookies -->
+    <div class="cookies-eu-banner hidden">
+        <p class="text-background text-center text-lg font-bold pb-2">Používání souboru cookies</p>
+        <p class="text-sm text-background pb-3"> Tato stránkaa využívá cookies. Kliknutím na tlačítko "Povolit vše"
+            vyjadřujete souhlas s jejich používáním.
+        </p>
+        <div class="flex flex-row gap-5 mx-auto  items-center justify-center">
+            <button class="cookies-button-accept accept">Povolit vše</button>
+            <button class="cookies-button-decline decline">Odmítnout vše</button>
+            <button class="cookies-button-edit edit">Upravit</button>
 
+        </div>
+    </div>
+    <!-- Edit cookies -->
+    <div class="cookies-eu-edit  hidden">
+        <p class="font-bold text-lg pb-5">Použití cookies
+        </p>
+        <p class="mb-5">Tato stránka používá soubory cookies a podobné technologie, abychom vám mohli nabídnout lepší
+            uživatelský
+            zážitek, personalizovaný obsah a zobrazování reklam. Některé soubory cookies jsou nezbytné pro správné
+            fungování stránek, zatímco jiné nám pomáhají zlepšovat vaše uživatelské prostředí prostřednictvím analýzy
+            údajů. Na základě vašeho souhlasu můžeme spolupracovat s partnery, kteří shromažďují a zpracovávají údaje,
+            jako je IP adresa, informace o prohlížeči a zařízení, pro následující účely:</p>
+        <div class="flex flex-col gap-2 font-bolder">
+            <label class="flex items-center gap-2">
+                <div class=" p-4 rounded-lg w-full justify-between flex"> <span class="mr-3">Technické
+                        cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="technical-cookies" checked disabled>
+                        <span class="slider-tech round"></span>
+                    </div>
+                </div>
+            </label>
+            <label class="flex items-center gap-2">
+                <div class="bg- p-4 rounded-lg w-full justify-between flex">
+                    <span class="mr-3">Analytické cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="analytical-cookies">
+                        <span class="slider round"></span>
+                    </div>
+                </div>
+            </label>
+            <label class="flex items-center gap-2">
+                <div class=" p-4 rounded-lg w-full justify-between flex"><span class="mr-3">Marketingové
+                        cookies</span>
+                    <div class="switch">
+                        <input type="checkbox" id="marketing-cookies">
+                        <span class="slider round"></span>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="flex flex-row gap-5 mx-auto items-center justify-between mt-4">
+            <div class="flex flex-row gap-5  items-center justify-center">
+                <button
+                    class="cookies-button-accept accept bg-goldenYellow text-white cursor-pointer px-4 py-2 my-1 text-sm font-bold transition-colors duration-75 hover:bg-[#f3e7d6] hover:text-[#222] hover:border-transparent">Povolit
+                    vše</button>
+                <button
+                    class="cookies-button-decline decline bg-goldenYellow text-white cursor-pointer px-4 py-2 my-1 text-sm font-bold transition-colors duration-75 hover:bg-[#f3e7d6] hover:text-[#222] hover:border-transparent">Odmítnout
+                    vše</button>
+            </div>
+            <div> <button class="cookies-button-save save">Uložit nastavení</button>
+                <!-- <button class="cookies-button-cancel cancel">Zrušit</button> -->
+            </div>
+        </div>
+    </div>
     <script src="navbar.js"></script>
     <script>
         loadNavbar("home");
@@ -270,6 +339,9 @@
     </script>
 
     <script src="script.js"></script>
+
+    <script src="cookies.js"></script>
+
 </body>
 
 </html>

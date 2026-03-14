@@ -1,6 +1,8 @@
 .site-header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 50;
     backdrop-filter: blur(16px);
     background: rgba(246, 244, 238, 0.72);
@@ -18,7 +20,7 @@
 }
 
 .header-inner {
-    min-height: 62px;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,6 +168,10 @@
 
 .site-header.theme-zoo .btn-secondary:hover {
     background: #fffaf5;
+}
+
+.nav-icon {
+    display: none;
 }
 
 /* RESPONSIVE */

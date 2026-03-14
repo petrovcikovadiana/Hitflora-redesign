@@ -4,20 +4,39 @@
             <img src="./assets/logo-black.svg" alt="Hitflora" class="brand-logo" />
         </a>
 
-        <nav class="nav">
-            <a href="index.html" data-page="home">Domů</a>
-            <a href="aktualne.html" data-page="aktualne">Aktuálně</a>
-            <a href="sortiment.html" data-page="sortiment">Sortiment</a>
-
-            <a href="index.html#sluzby" data-page="sluzby">Služby</a>
-            <a href="zoo.html" data-page="zoo">Mini ZOO</a>
+        <nav class="nav" id="mainNav">
+            <a href="index.html" data-page="home" class="nav-home-link">
+                <img src="home.svg" alt="" class="nav-icon" />
+                <span>Domů</span>
+            </a> <a href="aktualne.html" data-page="aktualne" class="nav-home-link">
+                <img src="news.svg" alt="" class="nav-icon" />
+                <span>Aktuálně</span>
+            </a>
+            <a href="sortiment.html" data-page="sortiment" class="nav-home-link"> <img src="sortiment.svg" alt=""
+                    class="nav-icon" />
+                <span>Sortiment</span></a>
+            <a href="index.html#sluzby" data-page="sluzby" class="nav-home-link">
+                <img src="services.svg" alt="" class="nav-icon" />
+                <span>Služby</span>
+            </a>
+            <a href="zoo.html" data-page="zoo" class="nav-home-link"> <img src="horse.svg" alt="" class="nav-icon" />
+                <span>Mini ZOO</span></a>
             <!-- <a href="about.html" data-page="about">O nás</a> -->
-            <a href="index.html#kontakt" data-page="kontakt">Kontakt</a>
+            <a href="index.html#kontakt" data-page="kontakt" class="nav-home-link"><img src="contact.svg" alt=""
+                    class="nav-icon" />
+                <span>Kontakt</span></a></a>
         </nav>
 
         <div class="header-actions">
             <a href="index.html#kontakt" class="btn btn-secondary">Nezávazná poptávka</a>
             <a href="index.html#sluzby" class="btn btn-primary">Prohlédnout služby</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Otevřít menu" aria-expanded="false"
+                aria-controls="mainNav" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </div>
 </header>
